@@ -14,6 +14,7 @@ export function ExperiencePreview({ state }: { state: number }) {
                 subTitle={item?.company}
                 description={item?.years}
                 link={item?.link}
+                idx={idx}
               />
             </div>
           ))}
@@ -27,6 +28,7 @@ export function ExperiencePreview({ state }: { state: number }) {
                 title={item?.school}
                 subTitle={`${item?.study} ${item?.ipk ? `- ${item?.ipk}` : ""}`}
                 description={item?.years}
+                idx={idx}
               />
             </div>
           ))}
