@@ -1,4 +1,9 @@
-import { Homepage, MarqueeInfo, Skill } from "./components/organisms";
+import {
+  Capability,
+  Homepage,
+  MarqueeInfo,
+  Skill,
+} from "./components/organisms";
 
 function App() {
   return (
@@ -7,7 +12,7 @@ function App() {
       <div className="flex flex-col gap-y-48 m-48">
         <MarqueeInfo />
         <Skill />
-        <h1>Kemampuan</h1>
+        <Capability />
         <h1>My Project</h1>
         <h1>Contact</h1>
       </div>

@@ -1,5 +1,6 @@
-import { BriefcaseBusiness, GraduationCap } from "lucide-react";
+import { ArrowDownToDot, BriefcaseBusiness, GraduationCap } from "lucide-react";
 import { Dispatch, SetStateAction } from "react";
+import { Button } from "./Button";
 
 export function SectionHeader({
   title,
@@ -17,8 +18,8 @@ export function SectionHeader({
       <h5 className="flex-1 font-sf-pro font-bold text-[5rem] text-primary">
         {title}
       </h5>
-      <div className="flex-1">
-        {section?.includes("skill") && (
+      {section?.includes("skill") && (
+        <div className="flex-1">
           <div className="flex flex-row gap-x-16 border-2 border-primary rounded-lg hover:cursor-pointer">
             {["Experience", "Education"].map((item, idx) => (
               <div
@@ -37,8 +38,21 @@ export function SectionHeader({
               </div>
             ))}
           </div>
-        )}
-      </div>
+        </div>
+      )}
+
+      {section?.includes("capability") && (
+        <a href="#" className="animate-bounce">
+          <Button variant="solid">
+            <div className="flex flex-row gap-x-16">
+              <span>
+                <ArrowDownToDot size={20} />
+              </span>
+              <span className="font-roboto text-[2rem]">Hire Me</span>
+            </div>
+          </Button>
+        </a>
+      )}
     </div>
   );
 }

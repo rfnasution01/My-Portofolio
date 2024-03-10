@@ -12,7 +12,9 @@
   "dependencies": {
     "lucide-react": "^0.352.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "class-variance-authority": "^0.7.0",
+    "react-loading": "^2.0.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
