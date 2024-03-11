@@ -14,7 +14,7 @@ export function SectionHeader({
   setState?: Dispatch<SetStateAction<number>>;
 }) {
   return (
-    <div className="flex flex-row phones:flex-col items-center phones:items-start gap-32">
+    <div className="flex flex-row phones:flex-wrap items-center phones:items-start gap-32">
       <h5 className="flex-1 font-sf-pro font-bold text-[5rem] text-primary">
         {title}
       </h5>
