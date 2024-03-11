@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="bg-background">
       <Homepage />
-      <div className="flex flex-col gap-y-48 m-48">
+      <div className="flex flex-col gap-y-80 m-48">
         <MarqueeInfo />
         <Skill />
         <Capability />

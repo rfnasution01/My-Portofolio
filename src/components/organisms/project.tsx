@@ -7,7 +7,7 @@ export function Project() {
   return (
     <div className="flex flex-col gap-y-24">
       <SectionHeader title="My Project" section="project" />
-      <div className="flex flex-col gap-y-16">
+      <div className="flex flex-col gap-y-48">
         {DataWork.map((item, idx) => (
           <div
             className={`flex ${
@@ -15,7 +15,7 @@ export function Project() {
             } phones:flex-col gap-x-48 gap-y-16`}
             key={idx}
           >
-            <div className="flex-1">
+            <div className="flex-1 hover:translate-y-16 transform transition-transform cursor-pointer">
               <img src={item?.picture} alt={item?.name} className="p-16" />
             </div>
             <div className="flex-1 flex items-center justify-center flex-col gap-y-24">
@@ -28,7 +28,7 @@ export function Project() {
               <div className="flex flex-wrap items-center justify-center gap-16">
                 {item.skill?.map((skill, idx) => (
                   <div
-                    className="flex items-center bg-primary-tint-1 p-8 rounded-lg text-primary gap-x-8"
+                    className="flex items-center hover:translate-x-8 transform transition-transform cursor-pointer bg-primary-tint-1 p-8 rounded-lg text-primary gap-x-8"
                     key={idx}
                   >
                     <h5 className="font-roboto font-light text-[1.6rem] text-center">
@@ -44,16 +44,18 @@ export function Project() {
                   </div>
                 ))}
               </div>
-              <Button variant="solid">
-                <div className="flex flex-row items-center gap-16">
-                  <span>
-                    <Link size={20} />
-                  </span>
-                  <h5 className="font-roboto text-[2rem] font-light text-white">
-                    Visit Website
-                  </h5>
-                </div>
-              </Button>
+              <a
+                href={item?.demo}
+                target="_blank"
+                className="flex flex-row items-center gap-16 bg-primary text-white px-32 py-16 border-2 border-transparent rounded-lg hover:bg-background hover:border-primary hover:text-primary"
+              >
+                <span>
+                  <Link size={20} />
+                </span>
+                <h5 className="font-roboto text-[2rem] font-light">
+                  Visit Website
+                </h5>
+              </a>
             </div>
           </div>
         ))}

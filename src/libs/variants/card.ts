@@ -1,7 +1,7 @@
 import { cva } from "class-variance-authority";
 
 const variants = {
-  outlined: ["bg-white", "border"],
+  outlined: ["bg-background", "border"],
 };
 
 const colors = {
@@ -23,8 +23,8 @@ const radius = {
 };
 
 const hover = {
-  general: ["hover:text-black", "hover:bg-white"],
-  primary: ["hover:text-white", "hover:bg-primary"],
+  general: ["hover:text-black", "hover:bg-background"],
+  primary: ["hover:text-background", "hover:bg-primary"],
 };
 
 export type CardVariants = keyof typeof variants;
