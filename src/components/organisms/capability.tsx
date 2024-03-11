@@ -9,7 +9,7 @@ export function Capability() {
       <SectionHeader title="My Services" section="capability" />
       <div className="grid grid-cols-12 gap-24">
         {DataCapability.map((item, idx) => (
-          <div className="col-span-4" key={idx}>
+          <div className="col-span-4 phones:col-span-12" key={idx}>
             <CardHelper>
               <SectionContent
                 title={item?.title}

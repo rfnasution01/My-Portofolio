@@ -13,7 +13,7 @@ export function Skill() {
         state={state}
         setState={setState}
       />
-      <div className="flex gap-x-32">
+      <div className="flex flex-row phones:flex-col-reverse gap-32">
         <div className="flex-1">
           <SkillPreview />
         </div>

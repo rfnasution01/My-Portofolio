@@ -9,7 +9,7 @@ export function ExperiencePreview({ state }: { state: number }) {
       {state === 0 && (
         <div className="grid grid-cols-12 gap-24">
           {DataExperience?.map((item, idx) => (
-            <div className="col-span-6" key={idx}>
+            <div className="col-span-6 phones:col-span-12" key={idx}>
               <CardHelper>
                 <SectionContent
                   title={item?.position}
@@ -26,7 +26,7 @@ export function ExperiencePreview({ state }: { state: number }) {
       {state === 1 && (
         <div className="grid grid-cols-12 gap-24">
           {DataEducation?.map((item, idx) => (
-            <div className="col-span-6 h-full" key={idx}>
+            <div className="col-span-6 h-full phones:col-span-12" key={idx}>
               <CardHelper>
                 <SectionContent
                   title={item?.school}
