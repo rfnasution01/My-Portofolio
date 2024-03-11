@@ -16,8 +16,8 @@ function App() {
         <Skill />
         <Capability />
         <Project />
-        <Contact />
       </div>
+      <Contact />
     </div>
   );
 }

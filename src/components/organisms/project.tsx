@@ -1,6 +1,5 @@
 import { Link } from "lucide-react";
 import { DataWork } from "../../const/data-work";
-import { Button } from "../atoms/Button";
 import { SectionHeader } from "../atoms/SectionHeader";
 
 export function Project() {
@@ -22,7 +21,7 @@ export function Project() {
               <h5 className="font-sf-pro text-[6rem] font-bold text-primary text-center">
                 {item?.name}
               </h5>
-              <h5 className="font-roboto text-[3rem] font-extralight text-primary-shade-2 text-center">
+              <h5 className="font-roboto text-[3rem] font-extralight text-primary-shade-3 text-center">
                 {item?.desc}
               </h5>
               <div className="flex flex-wrap items-center justify-center gap-16">
@@ -47,7 +46,7 @@ export function Project() {
               <a
                 href={item?.demo}
                 target="_blank"
-                className="flex flex-row items-center gap-16 bg-primary text-white px-32 py-16 border-2 border-transparent rounded-lg hover:bg-background hover:border-primary hover:text-primary"
+                className="flex flex-row items-center gap-16 bg-primary text-background px-32 py-16 border-2 border-transparent rounded-lg hover:bg-background hover:border-primary hover:text-primary"
               >
                 <span>
                   <Link size={20} />

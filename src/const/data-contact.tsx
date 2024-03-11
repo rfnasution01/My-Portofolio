@@ -5,7 +5,7 @@ export const DataContact = [
     img: <PhoneCall />,
     title: "WhatsApp",
     desc: "(+62) 82298511578",
-    link: "https://www.wa.me/082298511578",
+    link: "https://api.whatsapp.com/send?phone=082298511578",
   },
   {
     img: <Linkedin />,
@@ -17,6 +17,6 @@ export const DataContact = [
     img: <Mail />,
     title: "Gmail",
     desc: "rivaifnasution@gmail.com",
-    link: "https://mail.google.com/mail/u/rivaifnasution@gmail.com/#compose",
+    link: "mailto:rivaifnasution@gmail.com",
   },
 ];

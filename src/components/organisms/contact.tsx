@@ -1,27 +1,18 @@
 import { DataContact } from "../../const/data-contact";
-import { Card } from "../atoms/Card";
-import { SectionContent } from "../atoms/SectionContent";
-import { SectionHeader } from "../atoms/SectionHeader";
 
 export function Contact() {
   return (
-    <div className="flex flex-col gap-y-24">
-      <SectionHeader title="Contact" section="contact" />
-      <div className="grid grid-cols-12 gap-x-24">
-        <div className="col-span-6">
-          <Card variant="outlined" color="primary" radius="2xl">
-            {DataContact.map((item, idx) => (
-              <div className="" key={idx}>
-                <SectionContent
-                  title={item?.title}
-                  subTitle={item?.desc}
-                  img={item?.img}
-                />
-              </div>
-            ))}
-          </Card>
-        </div>
-      </div>
+    <div className="flex items-center justify-center gap-x-16 py-80 bg-primary-tint-3">
+      {DataContact.map((item, idx) => (
+        <a
+          href={item?.link}
+          target="_blank"
+          className="text-primary p-16 hover:bg-background"
+          key={idx}
+        >
+          <span>{item?.img}</span>
+        </a>
+      ))}
     </div>
   );
 }
