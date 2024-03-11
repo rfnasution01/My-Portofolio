@@ -1,7 +1,9 @@
 import {
   Capability,
+  Contact,
   Homepage,
   MarqueeInfo,
+  Project,
   Skill,
 } from "./components/organisms";
 
@@ -13,8 +15,8 @@ function App() {
         <MarqueeInfo />
         <Skill />
         <Capability />
-        <h1>My Project</h1>
-        <h1>Contact</h1>
+        <Project />
+        <Contact />
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import homepageBg from "../../../public/img/spin-decoration-wave.png";
+import homepageBg from "/img/spin-decoration-wave.png";
 import { HomepageInfo, HomepageProfil } from "../molecules/homepage-fragment";
 
 export function Homepage() {

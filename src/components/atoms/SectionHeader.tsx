@@ -9,7 +9,7 @@ export function SectionHeader({
   setState,
 }: {
   title?: string;
-  section?: "skill" | "capability" | "project" | "contract";
+  section?: "skill" | "capability" | "project" | "contact";
   state?: number;
   setState?: Dispatch<SetStateAction<number>>;
 }) {
@@ -41,14 +41,16 @@ export function SectionHeader({
         </div>
       )}
 
-      {section?.includes("capability") && (
+      {["capability", "contact"].includes(section ?? "") && (
         <a href="#" className="animate-bounce">
           <Button variant="solid">
             <div className="flex flex-row gap-x-16">
               <span>
                 <ArrowDownToDot size={20} />
               </span>
-              <span className="font-roboto text-[2rem]">Hire Me</span>
+              <span className="font-roboto text-[2rem]">
+                {section?.includes("contact") ? "Say Hello" : "Hire Me"}
+              </span>
             </div>
           </Button>
         </a>
