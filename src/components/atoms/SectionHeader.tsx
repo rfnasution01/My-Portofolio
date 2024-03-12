@@ -42,7 +42,10 @@ export function SectionHeader({
       )}
 
       {["capability", "contact"].includes(section ?? "") && (
-        <a href="#" className="animate-bounce">
+        <a
+          href="https://api.whatsapp.com/send?phone=082298511578"
+          className="animate-bounce"
+        >
           <Button variant="solid">
             <div className="flex flex-row gap-x-16">
               <span>

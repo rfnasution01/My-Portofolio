@@ -11,19 +11,24 @@ export function HomepageInfo() {
         <h3 className=""></h3>
       </div>
       <div className="flex flex-row items-center ">
-        <button
-          className="py-16 px-32 bg-primary text-white rounded-lg animate-bounce border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary"
-          type="button"
+        <a
+          href="https://peruri.rakamin.com/profile/rivai-fansuri-nst-varfrrxovb2zm4um"
+          target="_blank"
         >
-          <div className="flex gap-x-16 items-center">
-            <span>
-              <Download size={20} />
-            </span>
-            <span className="font-roboto text-[2rem] font-extralight">
-              Download CV
-            </span>
-          </div>
-        </button>
+          <button
+            className="py-16 px-32 bg-primary text-white rounded-lg animate-bounce border-2 border-transparent hover:border-primary hover:bg-transparent hover:text-primary"
+            type="button"
+          >
+            <div className="flex gap-x-16 items-center">
+              <span>
+                <Download size={20} />
+              </span>
+              <span className="font-roboto text-[2rem] font-extralight">
+                Download CV
+              </span>
+            </div>
+          </button>
+        </a>
       </div>
     </div>
   );

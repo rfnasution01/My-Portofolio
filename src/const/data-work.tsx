@@ -185,7 +185,7 @@ export const DataWork: Project[] = [
         logo: "/img/github.png",
       },
     ],
-    demo: "#",
+    demo: "http://notes.co.id/",
     picture: "/img/project/timeflow.png",
   },
   {
@@ -265,7 +265,7 @@ export const DataWork: Project[] = [
         logo: "/img/github.png",
       },
     ],
-    demo: "#",
+    demo: "http://notes.co.id/",
     picture: "/img/project/keynote.png",
   },
   {
@@ -353,7 +353,7 @@ export const DataWork: Project[] = [
         logo: "/img/github.png",
       },
     ],
-    demo: "http://bitmestaging.apps.notes.co.id/transaksi-tindakan",
+    demo: "http://bitmestaging.apps.notes.co.id/",
     picture: "/img/project/bitme.png",
   },
   {
