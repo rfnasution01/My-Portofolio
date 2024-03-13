@@ -1,4 +1,4 @@
-import profile from "/img/profile.png";
+// import profile from "/img/profile.png";
 
 export function HomepageProfil() {
   return (
