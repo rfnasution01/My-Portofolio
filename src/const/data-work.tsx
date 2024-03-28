@@ -109,7 +109,7 @@ export const DataWork: Project[] = [
         logo: "/img/github.png",
       },
     ],
-    demo: "http://devstaging.notes.co.id/",
+    demo: "https://staging.notes.co.id/",
     picture: "/img/project/notes.png",
   },
   {
@@ -185,7 +185,7 @@ export const DataWork: Project[] = [
         logo: "/img/github.png",
       },
     ],
-    demo: "http://notes.co.id/",
+    demo: "https://timeflow-staging.notes.co.id/admisi/umum/antrean-aktif",
     picture: "/img/project/timeflow.png",
   },
   {
@@ -265,7 +265,7 @@ export const DataWork: Project[] = [
         logo: "/img/github.png",
       },
     ],
-    demo: "http://notes.co.id/",
+    demo: "https://keynote-staging.notes.co.id/",
     picture: "/img/project/keynote.png",
   },
   {
@@ -353,7 +353,7 @@ export const DataWork: Project[] = [
         logo: "/img/github.png",
       },
     ],
-    demo: "http://bitmestaging.apps.notes.co.id/",
+    demo: "https://bitme-staging.notes.co.id/",
     picture: "/img/project/bitme.png",
   },
   {
